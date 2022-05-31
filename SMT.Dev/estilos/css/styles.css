@@ -2,8 +2,18 @@
     box-sizing: content-box;
 }
 
-#nav_color {
+#navbar {
     background-color: #d0f0e1;
+}
+
+#nombreFundacionNav {
+    font-size: 20px verdana sans-serif;
+    letter-spacing: 5px;
+}
+
+header a {
+    font: 20px verdana sans-serif;
+    letter-spacing: 10px;
 }
 
 .carousel-inner img {
@@ -16,9 +26,23 @@
 }
 
 #style_footer {
-    background-color: #838b99;
+    background-color: #4a7062;
     width: 100% !important;
     height: 100% !important;
+}
+
+footer a {
+    font: 10px verdana sans-serif;
+    letter-spacing: 5px;
+    color: gray !important;
+}
+
+#nombreFundacion {
+    font-size: 30px;
+}
+
+footer h5 {
+    font-size: 15px;
 }
 
 
