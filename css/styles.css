@@ -1,5 +1,13 @@
 /*CSS SMDT*/
 
+:root {
+  --colornavbar: rgba(64,29,21,0.9);
+  --colorfooter: rgba(83, 8, 8, 0.925);
+  --coloresecundario:
+  --colorterciario: 
+  --fontprinc: "NotoSerif";
+}
+
 html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
@@ -61,7 +69,7 @@ body {
 
   /*Color navbar scroll*/
   #mainNav.navbar-shrink {
-    background-color:rgba(64,29,21,0.9);
+    background-color:var(--colornavbar);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000;
@@ -98,7 +106,7 @@ body {
   border: 0;
 }
 
-.masthead {
+.bannersmdt {
   position: relative;
   width: 100%;
   height: auto;
@@ -110,7 +118,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
 }
-.masthead h1, .masthead .h1 {
+.bannersmdt h1, .bannersmdt .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -120,37 +128,37 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
 }
-.masthead h2, .masthead .h2 {
+.bannersmdt h2, .bannersmdt .h2 {
   max-width: 20rem;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  .masthead h1, .masthead .h1 {
+  .bannersmdt h1, .bannersmdt .h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
 @media (min-width: 992px) {
-  .masthead {
+  .bannersmdt {
     height: 100vh;
     padding: 0;
   }
-  .masthead h1, .masthead .h1 {
+  .bannersmdt h1, .bannersmdt .h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
-  .masthead h2, .masthead .h2 {
+  .bannersmdt h2, .bannersmdt .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
 }
 
-.about-section {
+.quienes-somos {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
-.about-section p {
+.quienes-somos p {
   margin-bottom: 5rem;
 }
 
@@ -734,7 +742,7 @@ input {
 }
 
 footer{
-  background-color:rgba(83, 8, 8, 0.925);
+  background-color: var(--colorfooter);
 }
 
 /*Formulario de contacto*/
