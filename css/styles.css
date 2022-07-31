@@ -1003,3 +1003,30 @@ card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon
   border-style:groove;
   height:400px;
 }
+
+/*boton flotante whatsapp*/
+.float {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#fff;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+  -webkit-transition: background 1s; /* For Safari 3.0 to 6.0 */
+  transition: background 1s; /* For modern browsers */
+}
+
+.float:hover{
+  text-decoration: none;
+  color:#25d366;
+  background: #fff;
+}
+
+.fa-whatsapp {
+  margin-top:13px;
+}
