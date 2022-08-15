@@ -1087,6 +1087,17 @@ card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon
 #news-feed figure figcaption span{
   color: white;
 }
+/*Noticia completa*/
+#news-feed .bloque-noticias p{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  flex-grow: 1;
+}
+
+#news-feed a{
+  text-decoration: none;
+}
 
 #googlemap{
   border-color: #275dc2b4;
