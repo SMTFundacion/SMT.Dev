@@ -102,7 +102,7 @@ $(document).ready(function() {
 }
 
 function initMap() {
-    const salta = { lat:-24.8039906, lng:-65.4260532};
+    const salta = { lat:-24.788094, lng:-65.433769};
     const map = new google.maps.Map(document.getElementById("googlemap"), {
       zoom: 15,
       center: salta,
