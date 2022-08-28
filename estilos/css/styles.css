@@ -125,7 +125,7 @@ footer{
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/imgsmdt2.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/assets/img/imgsmdt2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -222,7 +222,7 @@ footer{
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/noticias1.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/assets/img/noticias1.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -356,7 +356,7 @@ footer{
 /* Inicio estilo NewLetter Index.html */
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/newsletter.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/img/newsletter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -501,7 +501,7 @@ button, input {
   top: 0;
   width: 500%;
   height: 100%;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/valores.jpeg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/img/valores.jpeg");
 }
 .slider--el.anim-5parts .part.part-1 {
   -webkit-transition: -webkit-transform 1.1s 0.3s;
@@ -577,7 +577,7 @@ button, input {
   background-size: cover;
   width: 300%;
   height: 300%;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("../assets/img/vision.jpeg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/assets/img/vision.jpeg");
 }
 .slider--el.anim-9parts .part.left-top {
   top: 0%;
@@ -712,7 +712,7 @@ button, input {
   background-size: cover;
   width: 300%;
   height: 100%;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/valores.jpeg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/img/valores.jpeg");
 }
 
 .slider--el.anim-3parts .part.left {
@@ -759,7 +759,7 @@ button, input {
   background-size: cover;
   width: 200%;
   height: 200%;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/mision.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/img/mision.jpg");
 }
 
 
@@ -909,7 +909,8 @@ button, input {
   height: auto;
   min-height: 35rem;
   padding: 7rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/fondocursos.JPG");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/assets/img/fondocursos.JPG")
+  
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -943,7 +944,7 @@ button, input {
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url('../assets/searchicon.png');
+  background-image: url('/assets/searchicon.png');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -962,7 +963,7 @@ button, input {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/noticias1.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/assets/img/noticias1.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
