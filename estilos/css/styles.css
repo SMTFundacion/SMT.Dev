@@ -1,17 +1,144 @@
 /*CSS SMDT*/
-
+/* Inicio Estilos generales */
+.container{
+  width: 1124;
+  margin-right: auto;
+  margin-left: auto;
+}
+:root {
+  --colornavbar: rgba(64,29,21,0.9);
+  --colorfooter: rgba(83, 8, 8, 0.925);
+  --coloresecundario:rgba(163, 191, 186);
+  --colorterciario: rgba(180, 196, 217);
+  --cuarto:rgba(191, 183, 142, 0.925);;;
+  --fontprinc: "Nunito";
+  --colortitulos: rgb(43, 44, 48);
+}
 html {
   scroll-padding-top: calc(4.5rem - 1px);
+  scroll-behavior: smooth;
 }
-
 body {
   letter-spacing: 0.0625em;
 }
+h1{
+  font-size: 40px;
+} 
+
+/* Cards */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+}
+
+.l-bg-blue-dark {
+  background: linear-gradient(to right, #373b44, #4286f4) !important;
+  color: #fff;
+  border-width: 100px;
+  border-style: double;
+}
+
+card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
+  font-size: 110px;
+}
+
+.card-icon-large{
+  font-size: 110px;
+}
+
+.card-icon {
+  text-align: center;
+  line-height: 50px;
+  margin-left: 10px;
+  color: #000;
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  opacity: 0.1;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+  border-color: white;
+}
+
+/*link footer*/
+.links {        
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+.links img:hover {
+  transform: scale(1.5,1.5);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 60px;
+}
+
+footer{
+  background-color: var(--colorfooter);  
+}
+
+.footer {
+  padding: 5rem 0;
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+/* Fin Estilos generales */
+
+/* Inicio banner smdt */
+
+@media (min-width: 768px) {
+  .bannersmdt h1                       {
+    font-size: 4rem;
+    line-height: 4rem;
+    /*font-size: 6.5rem;*/
+    /*line-height: 6.5rem;*/
+    letter-spacing: 0.8rem;                                       
+  }
+}
+@media (min-width: 992px) {
+  .bannersmdt {
+    height: 100vh;
+    padding: 0;
+  }   
+  .bannersmdt h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }    
+  
+  .bannersmdt {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/imgsmdt2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+/* Fin banner smdt */
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: var(--colorterciario);
 }
+
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
@@ -61,10 +188,11 @@ body {
 
   /*Color navbar scroll*/
   #mainNav.navbar-shrink {
-    background-color:rgba(64,29,21,0.9);
+    background-color:var(--colornavbar);
   }
+  
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: rgb(0, 0, 0);
   }
 
   /*Color links al scrollear*/
@@ -88,29 +216,89 @@ body {
   }
 }
 
-.btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
-
-.masthead {
+.bannersmdtnoticias {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/imgsmdt2.jpg");
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/noticias1.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
-.masthead h1, .masthead .h1 {
+/* noticias*/
+
+#news-feed .bloque-noticias{
+  display: flex;
+  width: 100%;
+}
+#news-feed .bloque-noticias .bloque-izq{
+  width: 65%;  
+}
+
+#news-feed .bloque-noticias .bloque-der{
+  width: 35%;  
+}
+
+#news-feed article{
+  display: flex;
+  flex-direction: column;
+  padding-right: 3%;
+  height: 100%;
+}
+#news-feed .bloque-noticias .bloque-izq article{
+  height: 100%;
+}
+#news-feed .bloque-noticias .bloque-der article{
+  height: 50%;
+}
+#news-feed h1 {
+  margin: 25px 0 20px 0;
+  font-family: sans-serif;
+  font-size: 36px;
+  color: white;
+}
+#news-feed h2{
+  color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  flex-grow: 1;
+}
+#news-feed p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(226, 224, 224);
+  flex-grow: 1;
+}
+#news-feed figure{
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+}
+#news-feed figure img{
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+#news-feed figure figcaption{
+  width: auto;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: Helvetica;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+}
+#news-feed figure:hover figcaption{
+  background: black;
+}
+#news-feed figure figcaption span{
+  color: white;
+}
+.bannersmdt h1, .bannersmdt .h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -120,108 +308,86 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
 }
-.masthead h2, .masthead .h2 {
+.bannersmdt h2, .bannersmdt .h2 {
   max-width: 20rem;
   font-size: 1rem;
 }
-@media (min-width: 768px) {
-  .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-  .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .masthead h2, .masthead .h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
-  }
-}
 
-.about-section {
+/* Fin estilo Quienes somos Index.html */
+.quienes-somos {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
-.about-section p {
-  margin-bottom: 5rem;
-}
+/* Fin estilo Quienes somos Index.html */
 
-.projects-section {
-  padding: 10rem 0;
+/* Inicio estilo Historia Index.html */
+.historia {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, rgba(47,47,47,1) 0%, var(--colorterciario) 100%);
 }
-.projects-section .featured-text {
+.historia .featured-text {
   padding: 2rem;
+  background: -webkit-linear-gradient(#eee, rgba(255, 255, 255, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .historia .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 }
-.projects-section .project-text {
+.historia .project-text {
   padding: 3rem;
   font-size: 90%;
 }
 @media (min-width: 992px) {
-  .projects-section .project-text {
+  .historia .project-text {
     padding: 5rem;
   }
-  .projects-section .project-text hr {
+  .historia .project-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 30%;
   }
 }
+/* Fin estilo Historia Index.html */
 
+/* Inicio estilo NewLetter Index.html */
 .signup-section {
   padding: 10rem 0;
-  background: url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/newsletter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
-.signup-section .form-signup input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
+/* Fin estilo NewLetter Index.html */
 
-.contact-section {
-  padding-top: 5rem;
+/* Inicio estilo contactanos Index.html */
+.contact {
+  padding-top: 0rem 0;
+  background-color: var(--colorterciario);
 }
-.contact-section .card {
+.contact .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
 }
-.contact-section .card h4, .contact-section .card .h4 {
+.contact .card h4{
   font-size: 0.8rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
-.contact-section .card hr {
+.contact .card hr {
   border-color: #64a19d;
   border-width: 0.25rem;
   width: 3rem;
 }
-.contact-section .social {
+.contact .social {
   margin-top: 5rem;
 }
-.contact-section .social a {
+.contact .social a {
   text-align: center;
   height: 3rem;
   width: 3rem;
@@ -230,25 +396,19 @@ body {
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.3);
 }
-.contact-section .social a:hover {
+.contact .social a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-.contact-section .social a:active {
+.contact .social a:active {
   color: #fff;
 }
+/* Fin estilo contactanos Index.html */
 
-.footer {
-  padding: 5rem 0;
-}
-
-/*Carrousel Vertical*/
-
-button,
-input {
+/* Inicio Carrousel Vertical Index.html */
+button, input {
   outline: none;
   border: none;
 }
-
 .slider {
   position: relative;
   height: 100%;
@@ -266,7 +426,6 @@ input {
 .slider--control.left {
   left: 2rem;
 }
-
 .slider--control.right {
   right: 2rem;
 }
@@ -281,7 +440,6 @@ input {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
-
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .slider--control:after{
@@ -679,17 +837,23 @@ input {
   opacity: 0;
 }
 .slider--el-heading {
-  font-size: 5vw;
-  font-family:cursive;
+  font-size: 8rem;
+  font-family:var(--fontprinc);
+  font-weight: 700px;
   text-transform: uppercase;
   color:#cccccc;
 }
 
-/*.contenedor{
-  border-style:solid;
-  border-color: yellow;
-  border-width: 10px;
-}*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .slider--el-heading {
+    font-size: 4rem;
+    font-family:var(--fontprinc);
+    font-weight: 700px;
+    text-transform: uppercase;
+    color:#cccccc;
+  }
+}
 
 #slideMVV{
   height:600px;
@@ -698,6 +862,9 @@ input {
   /* For mobile phones: */
   #slideMVV{
     height:522px;
+  }
+  .slider--el-text{
+    font-size:16px;
   }
 }
 
@@ -708,150 +875,219 @@ input {
   padding:5vw;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .slider--el-text{
-    font-size:16px;
-  }
-}
-
 .slider--el.removed .slider--el-content {
   opacity: 0;
 }
+/* Fin Carrousel Vertical Index.html */
 
-/*fin carrousel vert*/
-
-/*link footer*/
-.links {        
-  width: 50%;
-  text-align: center;
-  display: inline-block;
+/*Inicio Formulario de contacto */
+.my-form {
+  color: #305896;
 }
-.links img:hover {
-  transform: scale(1.5,1.5);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 60px;
+.my-form .btn-default {
+  background-color: #305896;
+  color: #fff;
+  border-radius: 0;
 }
-
-footer{
-  background-color:rgba(83, 8, 8, 0.925);
+.my-form .btn-default:hover {
+  background-color: #4498C6;
+  color: #fff;
 }
-
-/*Formulario de contacto*/
-#nomform{
-  margin-left: 23%;
+.my-form .form-control {
+  border-radius: 0;
 }
-
-#apform{
-  margin-right: 23%;
+.titulos{
+  font-family: var(--fontprinc);
+  font-weight: 700px;
 }
+/*Fin Formulario de contacto */
 
-#tema{
-  margin-left: 23%;
-  margin-right: 23%;
-}
-
-#boton{
-  margin-left: 23%;
-  margin-right: 23%;
-}
-
-/*******************************/
-/********* Donate CSS **********/
-/*******************************/
-
-/* #dona{
-  background-color: #467370
-}
-
-.donate {
+/* Inicio estilo curso.html */
+ .headercursos{
   position: relative;
   width: 100%;
-  margin: 45px 0;
-  background: rgba(0, 0, 0, .5);
+  height: auto;
+  min-height: 35rem;
+  padding: 7rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/fondocursos.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+ }
+
+ .headercursos h1{
+  font-family: var(--fontprinc);
+  font-weight: 700;
+  color:var(--colortitulos);
+ }
+
+ .tituloscursos{
+  font-family: var(--fontprinc);
+  font-weight: 700;
+  color:var(--colortitulos);
+ }
+
+.inscripcion{
+  float: right;
 }
 
-.donate .donate-content {
-  padding: 45px 0 15px 0;
+.todoscursos{
+  background: var(--colorterciario);
+}
+  
+.searchbox-input{
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../assets/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
 }
 
-.container .donate {
-  margin: 90px 0;
-}
-
-.container .donate .donate-content {
-  padding: 45px 30px 15px 30px !important;
-}
-
-.donate .donate-content .section-header {
-  margin-bottom: 30px !important;
-}
-.donate .donate-content .section-header p {
- color: #FDBE33;
- font-size: 30px
-}
-
-.donate .donate-content .section-header h2 {
-  color: #ffffff !important;
-  font-size: 40;
-}
-
-.donate .donate-text p {
-  color: #ffffff !important;
-  font-size: 20px !important;
-}
-
-.donate .donate-form {
-  padding: 90px 30px;
-  background: #FDBE33 ;
-}
-
-.donate .donate-form .control-group {
-  margin-bottom: 15px;
-}
-
-.donate .donate-form .form-control {
-  height: 60px;
-  color: #ffffff;
-  padding: 0 15px;
-  border-radius: 0;
-  border: 1px solid #ffffff;
-  background: transparent;
-}
-
-.donate .donate-form .form-control::placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
-
-.donate .donate-form .form-control:-ms-input-placeholder,
-.donate .donate-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.donate .donate-form .btn-group {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.donate .donate-form .btn.btn-custom {
-  padding: 15px 0;
+.searchbox-input:focus {
   width: 100%;
-  height: 60px;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  box-shadow: inset 0 0 0 0 #ffffff;
+}
+/* Fin estilo curso.html */
+
+/* Inicio estilo noticias.html */
+.bannersmdtnoticias {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/noticias1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.donate .donate-form .btn.btn-custom:hover,
-.donate .donate-form .btn.btn-custom.active {
-  color: #FDBE33 !important;
-  border: 1px solid #ffffff !important;
-  box-shadow: inset 0 0 0 30px #ffffff !important;
-} */
+#news-feed .bloque-noticias{
+  display: flex;
+  width: 100%;
+}
+#news-feed .bloque-noticias .bloque-izq{
+  width: 65%;    
+}
+#news-feed .bloque-noticias .bloque-der{
+  width: 35%;  
+}
+#news-feed article{
+  display: flex;
+  flex-direction: column;
+  padding-right: 3%;
+  height: 100%;
+}
+#news-feed .bloque-noticias .bloque-izq article{
+  height: 100%;
+}
+#news-feed .bloque-noticias .bloque-der article{
+  height: 50%;
+}
+#news-feed h1 {
+  margin: 25px 0 20px 0;
+  font-family: sans-serif;
+  font-size: 36px;
+  color: white;
+}
+#news-feed h2{
+  color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  flex-grow: 1;
+}
+#news-feed p {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(226, 224, 224);
+  flex-grow: 1;
+}
+#news-feed figure{
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+}
+#news-feed figure img{
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+#news-feed figure figcaption{
+  width: auto;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: Helvetica;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+}
+#news-feed figure:hover figcaption{
+  background: black;
+}
+#news-feed figure figcaption span{
+  color: white;
+}
+/*Noticia completa*/
+#news-feed .bloque-noticias p{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  flex-grow: 1;
+}
 
-/* Donar */
+#news-feed a{
+  text-decoration: none;
+}
+/* Fin Estilo Noticias.html*/
+
+/* Inicio Estilos de las api's */
+
+/* boton flotante whatsapp*/
+.float {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#fff;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+  -webkit-transition: background 1s; /* For Safari 3.0 to 6.0 */
+  transition: background 1s; /* For modern browsers */
+}
+
+.float:hover{
+  text-decoration: none;
+  color:#25d366;
+  background: #fff;
+}
+
+.fa-whatsapp {
+  margin-top:13px;
+}
+
+/* estilo googlemaps*/
+#googlemap{
+  border-color: #275dc2b4;
+  border-width: 0.5rem;
+  border-style:groove;
+  height:400px;
+}
+
+/* Fin Estilos de las api's */
+
+/* Inicio estilo Donacion.html */
 #intro {
 	min-height: 100vh;
 	width: 100%;
@@ -890,13 +1126,11 @@ footer{
 	text-align: center;
 }
 
-
 .left-col p {
 	color: white;
 	font-size: 1.3rem;
 	line-height: 1.9rem;
-	text-align: center;
-	/* max-width: 500px; */
+	text-align: center;	
 }
 .right-col {
 	flex: 1;
@@ -905,7 +1139,6 @@ footer{
 	background-color: hsl(248, 32%, 49%);
 	color: white;
 	padding: 15px 90px;
-	/* border-bottom: 5px solid hsla(249, 10%, 26%, 0.466); */
 	border-radius: 15px;
 	box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
 	margin-bottom: 30px;
@@ -1045,4 +1278,5 @@ footer{
 		margin-top: 20px;
 		font-size: .7rem;
 	}
+  /* Fin estilo Donacion.html */
 }
